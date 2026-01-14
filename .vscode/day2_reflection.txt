@@ -1,0 +1,16 @@
+DAY 2 – DATA HANDLING REFLECTION
+
+1. Problems I faced today:
+-  confusion between terminal and Python shell,erroe in NaN handling, also trying to understand syntex)
+
+2. Things that confused me at first:
+- (why sales became float, groupby syntax)
+
+3. What clicked clearly today:
+- (Rows vs columns, list of dicts = table, why cleaning matters)
+
+4. One question I still have:
+- (df is use for for in syntex)
+
+5. One sentence summary of Day-2:
+- ( “Today I learned that data quality decides AI quality.”)
