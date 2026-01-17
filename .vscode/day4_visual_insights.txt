@@ -1,0 +1,48 @@
+Statistics summarize.
+Visualization reveals structure.
+AI models learn patterns.
+Humans must see patterns first.
+“How are sales values spread?”
+ans: by sales disbution chart with frequency
+HOW TO READ THIS
+Tall bars → common values
+Long tail → skew
+Gaps → unusual behavior
+Boxplot shows:
+median
+spread
+outliers
+This is how analysts justify removing outliers
+“Which city performs better?” Indore
+Is one city dominating? indore
+Is data size equal across cities? No
+Would AI over-prioritize one region? No
+Is there a trend over time?” yes
+AI models LOVE time patterns
+Trends ≠ noise
+Visuals help you see seasonality & spikes
+Are sales stable or spiky? Spiky
+Is growth consistent? NO
+Are high sales isolated events? no
+📌 This thinking prevents bad model assumptions.
+DAY 4 — VISUAL INSIGHTS
+1. What does the sales distribution show?
+- sales distribution shows sales with frequency
+2. What did the boxplot reveal?
+- median
+3. Which city performs better and why?
+- Indore as have higher sales 
+4. Is there a visible trend over time?
+- yes in april the sale is high
+5. One risk if AI learns from this data blindly:
+- Which chart was most informative?
+Time based chart is more informative
+Which chart could mislead if misread?
+Sales disbution
+Scatter plots connect features → prediction.
+This is where feature thinking starts.
+ML models learn correlations, not meaning.
+1. Which chart surprised me the most? correlations head map
+2. Which feature seems most predictive? data with time
+3. What business question does this data answer? sales
+Better features beat better models. Always.
