@@ -203,3 +203,64 @@ df_final = df_final[
 
 print("FINAL DATASET FOR AI / ANALYSIS")
 print(df_final)
+# =========================
+# DAY 4 — VISUALIZATION
+# =========================
+
+import matplotlib.pyplot as plt
+# Histogram of sales
+plt.figure()
+plt.hist(df_final["sales"], bins=5)
+plt.title("Sales Distribution")
+plt.xlabel("Sales")
+plt.ylabel("Frequency")
+plt.show()
+# Boxplot for sales
+plt.figure()
+plt.boxplot(df_final["sales"])
+plt.title("Sales Boxplot")
+plt.ylabel("Sales")
+plt.show()
+# Sales by city
+city_sales = df_final.groupby("city")["sales"].sum()
+
+plt.figure()
+city_sales.plot(kind="bar")
+plt.title("Total Sales by City")
+plt.xlabel("City")
+plt.ylabel("Total Sales")
+plt.show()
+# Sales over time
+df_time = df_final.sort_values("date")
+
+plt.figure()
+plt.plot(df_time["date"], df_time["sales"], marker="o")
+plt.title("Sales Over Time")
+plt.xlabel("Date")
+plt.ylabel("Sales")
+plt.show()
+# Scatter plot: Sales vs Date
+plt.figure()
+plt.scatter(df_final["date"], df_final["sales"])
+plt.title("Sales vs Date")
+plt.xlabel("Date")
+plt.ylabel("Sales")
+plt.show()
+# =========================
+# CORRELATION ANALYSIS
+# =========================
+
+# Select numeric columns only
+numeric_df = df_final.select_dtypes(include=["number"])
+
+print("Correlation matrix:")
+print(numeric_df.corr())
+plt.figure()
+plt.imshow(numeric_df.corr())
+plt.colorbar()
+plt.xticks(range(len(numeric_df.columns)), numeric_df.columns, rotation=45)
+plt.yticks(range(len(numeric_df.columns)), numeric_df.columns)
+plt.title("Correlation Heatmap")
+plt.show()
+
+

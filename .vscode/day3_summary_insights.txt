@@ -1,0 +1,48 @@
+DAY 3 — DATA UNDERSTANDING INSIGHTS
+
+1. Data quality issues found:
+- (Example: Missing sales values, missing dates, negative sales)
+
+2. What the statistics reveal:
+- (Example: Mean sales is higher than median, indicating skew)
+
+3. Outliers observed:
+- (Example: Very high sales values may represent special cases)
+
+4. Why this matters for AI:
+- (Example: AI trained on this data would overestimate revenue)
+
+5. One decision I would make using this data:
+- (Example: Focus on Indore city customers)
+1. Why is mean sometimes misleading?
+2. When should I NOT remove outliers?
+3. How could bad data hurt business decisions?
+
+AI does not understand:
+whether data is realistic
+whether numbers make sense
+whether something is an error or truth
+👉 YOU decide that.
+Bad data causes:
+biased models
+wrong predictions
+confident but incorrect AI
+So today = human intelligence > machine intelligence
+If mean ≠ median → data is skewed
+High std → unstable business
+Median often reflects re
+👉 AI blindly optimizes mean unless you stop it
+Never analyze raw data directly.
+Always work on a copy.
+Which column has missing values?
+Would an AI model understand why it’s missing? → ❌
+MCAR → random (safe-ish)
+MAR → depends on another column (dangerous)
+MNAR → depends on itself (very dangerous)
+Dropping loses data
+Filling keeps data but adds assumptions
+There is no universal correct answer.
+That’s why humans decide.
+IQR ignores extreme noise
+Much safer than mean/std
+Widely used in finance & healthcare
